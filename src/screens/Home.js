@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Card from "../components/Card";
-import Carausal from "../components/Carausal";
+import Navbar from "../components/Navbar.js";
+import Footer from "../components/Footer.js";
+import Card from "../components/Card.js";
+import Carausal from "../components/Carausal.js";
 
 export default function Home() {
   return (

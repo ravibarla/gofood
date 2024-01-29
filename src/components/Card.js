@@ -4,7 +4,7 @@ export default function Card() {
   return (
     <div>
       <div className="card m-3" style={{ width: "18rem" }}>
-        <img className="card-img-top" alt="Card image cap" src="https://source.unsplash.com/random/300×300/?chair" />
+        <img className="card-img-top" alt="Card-pic" src="https://source.unsplash.com/random/300×300/?chair" />
         <div className="card-body">
           <h5 className="card-title">Card title</h5>
           <p className="card-text">some thin alcmal.</p>
