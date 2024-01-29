@@ -43,7 +43,7 @@ export default function Carausal() {
             <img
               src="https://source.unsplash.com/random/900×700/?momos"
               className="d-block w-100"
-              style={{ filter: "brightness(50%)" }}
+              style={{ filter: "brightness(30%)" }}
               alt="..."
             />
           </div>

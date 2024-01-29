@@ -1,0 +1,35 @@
+[
+  {
+    "categoryName": "Biryani/Rice",
+    "name": "chicken fried rice",
+    "options": [
+      {
+        "half": "130",
+        "full": "320"
+      }
+    ],
+    "description": "its very delicious chicken fried rice "
+  },
+  {
+    "categoryName": "Momos",
+    "name": "steamed chicken rice",
+    "options": [
+      {
+        "half": "100",
+        "full": "200"
+      }
+    ],
+    "description": "its very delicious chicken momos "
+  },
+  {
+    "categoryName": "chawmin",
+    "name": "chicken chowmin",
+    "options": [
+      {
+        "half": "100",
+        "full": "180"
+      }
+    ],
+    "description": "its very delicious chicken chawmin "
+  }
+]

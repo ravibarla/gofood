@@ -1,15 +1,22 @@
 const express = require("express");
 const router = express.Router();
-const user = require("../models/User");
+const User = require("../models/User");
 router.post("/createUser", async (req, res) => {
+  console.log(req.body);
+  const { name, password, email, location } = req.body;
   try {
-    await user.create({
-      name: "ravi user 1",
-      password: "123456789",
-      email: "ravi@gmail.com",
-      location: "delhi",
+    const newUser = new User({
+      name: name,
+      password: password,
+      email: email,
+      location: location,
     });
-    res.json({ success: true });
+    newUser
+      .save()
+      .then(() => console.log("doctor is registered succeffully"))
+      .catch((err) => console.log("error in creating user"));
+    return res.send(" registeration of doctor succesfully");
+    // res.json({ success: true });
   } catch (err) {
     console.log("error in creating user");
   }

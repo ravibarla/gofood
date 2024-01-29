@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const mongoURI = `mongodb+srv://ravibarla1:Py4eEMLzyjpk0NeN@cluster0.vnsn4kw.mongodb.net/?retryWrites=true&w=majority`;
+const mongoURI = `mongodb+srv://ravibarla1:Py4eEMLzyjpk0NeN@cluster0.vnsn4kw.mongodb.net/goFoodMern?retryWrites=true&w=majority`;
 // `mongodb://127.0.0.1:27017/go-food`;
 
 const mongoDB = async () => {
