@@ -41,4 +41,24 @@ router.post(
     }
   }
 );
+router.post("/login", async (req, res) => {
+  const { email, password } = req.body;
+  try {
+    // const data =
+    await User.find({ email }).then((data) => {
+      console.log(data);
+      console.log("password :" + data[0].password);
+      if (data[0].password === password) {
+        console.log("password matched");
+        return res.status(200).json({ success: "login successfully" });
+      } else {
+        console.log("password mismatches");
+        return res.status(400).json({ errors: "password mismatches" });
+      }
+    });
+    // console.log("data :", data);
+  } catch (err) {
+    console.log(err);
+  }
+});
 module.exports = router;
